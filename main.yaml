@@ -11,6 +11,14 @@ libraries:
   srv8: 'Helps to distribute data for UIs8'
 dictionary:
   mixin: 'Part of the thing for specific type'
+validation:
+  - attribute: id
+    pass: 'hashed content matches the hash given'
+  // temporar experimental solution without using server to validate
+  - attribute: time
+    pass: 'higher than previous'
+  - attribute: time
+    pass: 'lower than time thing weas syncronised'
 db:
   model:
     universal:
